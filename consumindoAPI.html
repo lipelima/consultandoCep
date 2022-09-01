@@ -9,9 +9,14 @@
 </head>
 <body>
     
-    <h1>Consumindo API</h1>
+    <h1>Consultando CEP</h1>
 
     <input type="text" name="cep" id="cep" placeholder="Digite o CEP" maxlength="8" > <br>
+
+
+    <input type="text" name="uf" id="uf" placeholder="Digite o uf" > <br>
+    <input type="text" name="localidade" id="localidade" placeholder="Digite o localidade" > <br>
+    <input type="text" name="logradouro" id="logradouro" placeholder="Digite o logradouro" > <br>
 
 
     <button onclick="consultAddress()">Consultar</button>
@@ -19,8 +24,14 @@
         <p></p>
     </div>
 
+    <button onclick="porEndereco()">Consultar Endereço</button>
+    <div id="resultado">
+        <p></p>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
+
 
 </body>
 </html>

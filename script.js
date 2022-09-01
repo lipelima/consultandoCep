@@ -13,8 +13,30 @@ function consultAddress() {
         alert('CEP Invalido!');
         return;
     }
-
     
+}
+
+
+function porEndereco() {
+
+    let logradouro = document.querySelector('#logradouro').value;
+    let uf = document.querySelector('#uf').value;
+    let localidade = document.querySelector('#localidade').value;
+
+    const url = `http://viacep.com.br/ws/${uf}/${logradouro}/${localidade}/json/`;
+
+    fetch(url).then(response => response.json()).then(showAddress2);
+    
+}
+
+function showAddress2(dados) {
+    let resultado = document.querySelector('#resultado');
+
+    if (dados.erro) {
+        resultado.innerHTML = "Não foi possivel localizar endereço";
+    } else {
+        resultado.innerHTML = `<p>Cep: ${dados.cep}</p>`
+    }
 }
 
 
