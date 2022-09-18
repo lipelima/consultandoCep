@@ -9,21 +9,38 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    
-    <h1>Consultando CEP</h1>
 
-    <input type="text" name="cep" id="cep" placeholder="CEP: " minlength="8" maxlength="10" > <br>
+    <div class="container">
+
+        <div class="main">
+
+            <h1>Consultando CEP</h1>
+
+            <input type="text" name="cep" id="cep" placeholder="CEP: " minlength="8" maxlength="10" > <br>
+        
+        
+            <button onclick="consultAddress()">Consultar</button>
+            <div id="resultado">
+                <p></p>
+            </div>
+
+        </div>
+
+        <footer>
+            Desenvolvido por <a href="#">Felipe Lima</a>.
+            <div class="links">
+                <a href="#">Linkedin</a>
+                <a href="#">Github</a>
+                <a href="#">Calculador de Porcentagem</a>
+            </div> 
+        </footer>
 
 
-    <button onclick="consultAddress()">Consultar</button>
-    <div id="resultado">
-        <p></p>
+
     </div>
-
-
     
-    <script src="script.js"></script>
 
+    <script src="script.js"></script>
 
 </body>
 </html>
