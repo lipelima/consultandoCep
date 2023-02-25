@@ -1,3 +1,9 @@
+
+function myFunction() {
+    var element = document.getElementById("btnDark");
+    element.classList.toggle("dark-mode");
+ }
+
 function zerarCampo() {
     document.querySelector('#cep').value=("");
 }

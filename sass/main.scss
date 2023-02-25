@@ -1,3 +1,5 @@
+@import "_media";
+
 *{
     margin: 0;
     padding: 0;
@@ -5,25 +7,27 @@
 }
 
 body{
-    border: 5px solid blue;
+    
     width: 100%;
     height: 100vh;
     background: url(../img/istockphoto-938453686-170667a.jpg) no-repeat;
     background-size: 100% 100vh;
+    
 
     .container{
-        border: 2px solid orange;
+        
         margin: 0 auto;
         max-width: 980px;
         height: 100%;
         text-align: center;
 
-
         .main{
 
             margin: 4% auto;
             width: 60%;
+            min-width: 380px;
             height: 50vh;
+            min-height: 330px;
             border: 1px inset rgba(217,24,24,0.19);
             border-radius: 9px;
             box-shadow: 5px 5px 5px 0px #d644446b, inset 4px 4px 15px 0px #fab1b19c, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -97,7 +101,27 @@ body{
                 text-decoration: underline;
                 background: linear-gradient(135deg, #FFFFFF 0%, #FF7979 81%, #FF0000 100%);
             }
-        }      
+        }   
+        
+        #rodape{
+            
+            margin-top: 38vh;
+            padding: 0 20%;
+            color: #d1cfcf93;
+            
+            
+
+            .links a, .barra-link{
+                color: rgb(236, 200, 200); 
+                text-decoration: none;
+                margin-left: 10px;
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            
+            
+        }
     }   
 }
 
